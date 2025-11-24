@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <title>A Taste of Tuscany</title>
+    <link rel="stylesheet" href="w16_Tuscany.css">
+</head>
+
+<body>
+
+<article id="mainContent">
+
+<div class="content">
+
+    <p>
+        <b style="font-size: 2em;">A Taste of Tuscany</b><br>
+        <i style="font-size: 1.4em;">Italian Restaurant</i><br>
+        234 Arezzo Avenue<br>
+        Sherwood Park
+    </p>
+
+    <p>
+        <img 
+            src="https://www.thetasteoftuscany.com/uploads/1/2/9/7/129797089/tasteoftuscuany-logo_orig.png"
+            alt="Italian restaurant logo"
+            class="logo-img">
+    </p>
+
+    <ul>
+        <li>Fine Italian Dining</li>
+        <li><button id="showBtn">Show Specials</button></li>
+        <li>Licensed</li>
+        <li>Banquet Room</li>
+        <li>Open Daily Until 11pm</li>
+        <li>Eat In, Take Out, Delivery</li>
+        <li>Call 780-555-1234</li>
+    </ul>
+
+</div>
+
+</article>
+
+<article id="specialsPopup">
+    <h2>Today's Specials</h2>
+    <p>    <li>Pasta e Fagioli</li>
+        <li>Ravioli Nudi</li>
+        <li>Fetunta</li>
+        <li>Crostini con Salsiccia</li>
+        <li>Ribollita</li></p>
+    <button id="hideBtn">Hide Specials</button>
+</article>
+
+<script>
+    const popup = document.getElementById("specialsPopup");
+    const showBtn = document.getElementById("showBtn");
+    const hideBtn = document.getElementById("hideBtn");
+
+    showBtn.onclick = () => {
+        popup.style.display = "block";
+    };
+
+    hideBtn.onclick = () => {
+        popup.style.display = "none";
+    };
+</script>
+
+</body>
+</html>
